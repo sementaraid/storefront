@@ -1,0 +1,38 @@
+{
+  "name": "material-next-ts",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "prepare": "node node_commands/prepare/index.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "tsc": "tsc --project tsconfig.json && tscpaths -p tsconfig.json -s ./src -o ./dist"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "@mui/styles": "^5.11.12",
+    "@types/lodash": "^4.14.191",
+    "dotenv": "^16.0.3",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.2.0",
+    "lodash": "^4.17.21",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}
